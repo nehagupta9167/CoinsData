@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #f6f6f6 !important;
+    color: lemonchiffon !important;
+
+    width: 100%;
+    align-items: center;
+    height: 100%;
+
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* Background image is fixed in the viewport so that it doesn't move when 
+    the content's height is greater than the image's height */
+    background-attachment: fixed;
+
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size: cover;
+
+    /* Location of the image */
+    //background-image: url(images/background.jpg);
+    .jumbotron {
+        background-color: transparent !important;
+        padding: 1rem 2rem !important;
+    }
+}
+
+.navbar-brand {
+    color: mediumspringgreen !important;
+    font-size: xxx-large !important;
+}
+
+.nav-link {
+    color: blanchedalmond !important;
+}
+
+.pagination {
+    margin: 0;
+    background-clip: content-box;
+    background-color: peru;
+    padding-top: 15px;
+
+    li{
+        padding-right: 10px;
+    }
+}
+
+.about-section {
+    padding: 32px;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    background-color: transparent;;
+    margin-bottom: 10px;
+
+    &__search {
+        input[type="text"] {
+            padding: 6px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            float: right;
+            padding: 6px 10px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.wrapper {
+    padding: 0 1rem;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-gap: 2rem;
+
+    &__card {
+        text-decoration: none;
+        color: rgb(8, 8, 8);
+        background-color: #fff;
+        padding: 20px;
+
+        &:hover {
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+        }
+    }
+}
+
+.news-single {
+    background-color: #fff;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
