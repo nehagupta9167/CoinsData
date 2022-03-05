@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('./partials/head'); %>
+</head>
+
+<body background="images/background.jpg">
+  <header>
+    <%- include('./partials/header'); %>
+  </header>
+  <main id="home">
+    <div class="jumbotron">
+      <h2>Coin Data</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Symbol</th>
+          <th>Rank</th>
+          <th>Price</th>
+          <th>Market Cap</th>
+        </tr>
+
+        <% data.forEach( function( data ) { %>
+          <tr>
+            <td>
+              <%= data.name %>
+            </td>
+            <td>
+              <%= data.symbol %>
+            </td>
+            <td>
+              <%= data.rank %>
+            </td>
+            <td>
+              <%= data.price %>
+            </td>
+            <td>
+              <%= data.market_cap %>
+            </td>
+          </tr>
+          <% }); %>
+      </table>
+
+      <% if (pageCount> 1) { %>
+        <ul class="pagination  justify-content-center">
+          <% if (currentPage> 1) { %>
+            <li><a href="/pagination?page=1">&laquo;</a></li>
+            <% } %>
+              <% var i=(currentPage> 5 ? currentPage - 4 : 1) %>
+                <% if (i !==1) { %>
+                  <li class="disabled"><a href="#">...</a></li>
+                  <% } %>
+                    <% for (i; i<=pageCount; i++) { %>
+                      <% if (currentPage==i) { %>
+                        <li class="active"><span>
+                            <%= i %> <span class="sr-only">(current)
+                              </span>
+                          </span></li>
+                        <% } else { %>
+                          <li><a href="/pagination?page=<%= i %>">
+                              <%= i %>
+                            </a></li>
+                          <% } %>
+                            <% if (i==(+currentPage + 4)) { %>
+                              <li class="disabled"><a href="#">…</a></li>
+                              <% break; } %>
+                                <% } %>
+                                  <% if (currentPage !=pageCount) { %>
+                                    <li><a href="/pagination?page=<%= pageCount %>">&raquo;</a></li>
+                                    <% } %>
+        </ul>
+        <% } %>
+    </div>
+    <div class="about-section">
+      <h1 id="about">About</h1>
+      <span>This is project developed by Neha Gupta for academic and learning purpose.</span>
+    </div>
+  </main>
+
+  <footer>
+    <%- include('./partials/footer'); %>
+  </footer>
+</body>
+
+</html>
