@@ -11,7 +11,7 @@ var coinsData = [],
     dataArray = [],
     coinsList = [],
     currentPage = 1,
-    pageSize = 40,
+    pageSize = 30,
     pageCount = 0;
 
 // function getCoinsData(){
@@ -26,6 +26,8 @@ var coinsData = [],
 //         }
 
 // }
+
+module.exports = router;
 
 router.get('', async(req, res) => {
     //let page_index = 1;
@@ -161,4 +163,3 @@ router.get('/about', function(req, res) {
 // })
 
 // req.end()
-module.exports = router;
