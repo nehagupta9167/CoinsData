@@ -2,6 +2,7 @@
 
 - Website is build using Node.js with Express, EJS and CSS
 - This app display data using public api from [Coinlib](https://coinlib.io/apidocs): https://coinlib.io/api/v1/coinlist/
+- The public api requires a key specific to a Coinlib user account created. The key for my account is hardcoded in index.js. 
 
 
 Steps to follow to host the website locally: 
