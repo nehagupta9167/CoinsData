@@ -1,0 +1,4 @@
+npm init -y
+npm install express ejs
+npm install node-sass
+npm install axios --save
