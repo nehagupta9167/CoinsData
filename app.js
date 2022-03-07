@@ -16,7 +16,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // New
 
 
-
 // Routes
 const indexRouter = require('./src/routes/index.js');
 
