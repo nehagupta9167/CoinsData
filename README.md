@@ -15,4 +15,5 @@ Steps to follow to host the website locally:
 
 
 A screenshot of the website !!
-![image](https://user-images.githubusercontent.com/49072103/156871346-d8ee09a6-ee85-49e9-ab55-fb80d4c9c768.png)
+![image](https://user-images.githubusercontent.com/49072103/156996297-05be7d2e-c41a-48d9-8d53-5ac0d9351c1b.png)
+
