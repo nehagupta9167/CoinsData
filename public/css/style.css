@@ -26,6 +26,10 @@ body .jumbotron {
   padding: 1rem 2rem !important;
 }
 
+.header-font {
+  color: gold;
+}
+
 .navbar-brand {
   color: mediumspringgreen !important;
   font-size: xxx-large !important;
@@ -50,8 +54,13 @@ body .jumbotron {
   padding: 32px;
 }
 
+.table-header-style {
+  font-size: x-large;
+  color: coral !important;
+}
+
 table, th, td {
-  border: 1px solid;
+  border: 1px solid lemonchiffon;
   border-collapse: collapse;
 }
 
